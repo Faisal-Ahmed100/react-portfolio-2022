@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Img from "../img/img.jpg";
 
 const Sidebar = ({ children }) => {
+  const [open, setOpen]=useState(false);
   const MenuItem = [
     {
       path: "/",
@@ -39,47 +40,49 @@ const Sidebar = ({ children }) => {
       path: "/",
       name: "Home",
       icon: "fa-solid fa-house",
-      navItemName:"Home"
+      navItemName: "Home",
     },
     {
       path: "/about",
       name: "About me",
       icon: "fa-solid fa-user",
-      navItemName:"About"
+      navItemName: "About",
     },
     {
       path: "/my-skills",
       name: "Skills",
       icon: "fa-solid fa-graduation-cap",
-      navItemName:"Skills"
+      navItemName: "Skills",
     },
     {
       path: "/experience",
       name: "Experience",
       icon: "fa-solid fa-briefcase",
-      navItemName:"Experience"
+      navItemName: "Experience",
     },
     {
       path: "/education",
       name: "Education",
       icon: "fa-solid fa-book",
-      navItemName:"Education"
+      navItemName: "Education",
     },
     {
       path: "/portfolios",
       name: "Portfolio",
       icon: "fa-solid fa-user",
-      navItemName:"Portfolio"
+      navItemName: "Portfolio",
     },
     {
       path: "/contact",
+      name:"Contact",
       icon: "fa-solid fa-address-card",
-      navItemName:"Contact"
+      navItemName: "Contact",
     },
   ];
   return (
     <div className="flex">
       <div className="w-[250px] shadow-md shadow-gray-500 h-screen fixed top-0 -left-[100%] md:left-0 transition-all ease-in-out md:flex flex-col justify-evenly">
+        {/* dasktop view */}
         <div className="flex flex-col justify-center items-center">
           <div>
             <img
@@ -102,7 +105,7 @@ const Sidebar = ({ children }) => {
               <i className="fa-solid fa-star text-[12px] text-yellow-500"></i>
               <i className="fa-solid fa-star text-[12px] text-yellow-500"></i>
             </div>
-            <p className="text-sm">(1 Review)</p>
+            <p className="text-sm">(5 Review)</p>
           </div>
           <hr />
         </div>
@@ -120,24 +123,38 @@ const Sidebar = ({ children }) => {
           ))}
         </div>
       </div>
-      <div className=" fixed top-0 md:-left-[100%] transition-all ease-linear flex flex-col h-screen bg-[#6c5ce7] w-[50px]">
+
+   
+  {/* mobile view */}
+  <div className="absolute top-5 left-0 flex cursor-pointer md:hidden" onClick={()=>setOpen(!open)}><i className="fa-solid fa-bars bg-[#8376e6] px-2 text-white text-xl"></i></div>
+
+  <div className=" fixed top-0 -left-[100%] transition-all ease-linear flex flex-col h-full bg-[#6c5ce7] w-[200px] pt-8">
+ 
+
+    <div className="absolute top-0 right-0 cursor-pointer" onClick={()=>setOpen(!open)}><i className="fa-solid fa-xmark bg-[#8376e6] px-2 text-white round text-xl hover:bg-red-600 hover:text-white"></i></div>
+
         {MobileItem.map((item) => {
           return (
-            <NavLink to={item.path} className="flex justify-center items-center text-white text-2xl" title={item.navItemName} end>
-              <div className="mb-3 mt-3">
+            <NavLink
+              to={item.path}
+              className="flex justify-between text-white ml-3 mr-2"
+              title={item.navItemName}
+              end
+            >
+              <div className="flex items-center gap-3 py-3 ">
                 <i className={item.icon}></i>
+                <p>{item.name}</p>
               </div>
             </NavLink>
           );
         })}
 
-
-        <h2 className="-rotate-90 w-[264px] h-[250px] text-2xl font-medium flex gap-2"><span className="text-[#921bb6] font-semibold">Hello</span> <span className="text-white text-2xl font-normal">World</span> </h2>
+       
       </div>
-
-      <main className="w-full px-3 md:px-0 md:pl-6 md:ml-[15rem] ml-[3rem]">
+      <main className="w-full px-3 md:px-0 md:pl-6 md:ml-[15rem] md:h-screen">
         {children}
       </main>
+       
     </div>
   );
 };

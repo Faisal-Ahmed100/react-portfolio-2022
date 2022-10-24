@@ -13,7 +13,8 @@ import Error from './pages/Error'
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <div className='bg-gradient-to-r from-indigo-100 via-purple-200 to-indigo-100'>
+       <BrowserRouter>
     <Sidebar>
       <Routes>
         <Route path='/' element={<Home />} />
@@ -27,6 +28,8 @@ const App = () => {
       </Routes>
       </Sidebar>
     </BrowserRouter>
+    </div>
+   
   )
 }
 

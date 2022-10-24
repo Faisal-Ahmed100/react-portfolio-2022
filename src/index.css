@@ -8,13 +8,23 @@ body{
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
-@media (min-width:768px) {
+@media (min-width:769px) {
     .active{
-    color: #6c5ce7;
-    border-bottom: 1px solid #6c5ce7;
+        color: #6c5ce7;
+        border-bottom: 1px solid #6c5ce7;
+    }
+}
+
+
+@media (max-width:768px) {
+    .active{
+    color: white;
+    border-bottom: 1px solid white;
 }
 }
 
-.active{
-    color: #921bb6;
+.round{
+    border-bottom-left-radius: 5px;
 }
+
+
