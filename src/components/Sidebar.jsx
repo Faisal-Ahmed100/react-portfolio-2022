@@ -125,13 +125,19 @@ const Sidebar = ({ children }) => {
       </div>
 
    
-  {/* mobile view */}
-  <div className="absolute top-5 left-0 flex cursor-pointer md:hidden" onClick={()=>setOpen(!open)}><i className="fa-solid fa-bars bg-[#8376e6] px-2 text-white text-xl"></i></div>
+  {/* mobile view  */}
+  {
+    open ? 
+    <div className="fixed top-0 right-5 flex justify-center items-center cursor-pointer md:hidden" onClick={()=>setOpen(!open)}><i className="fa-solid fa-xmark bg-[#8376e6d3] px-2 text-white text-3xl "></i></div>
+     :
+     <div className="fixed top-0 right-5 flex justify-center items-center cursor-pointer md:hidden" onClick={()=>setOpen(!open)}><i className="fa-solid fa-bars bg-[#8376e6d5] px-2 text-white text-3xl "></i></div>
+  }
+  
 
-  <div className=" fixed top-0 -left-[100%] transition-all ease-linear flex flex-col h-full bg-[#6c5ce7] w-[200px] pt-8">
+  <div className={open ? "fixed top-9 right-0 transition-all ease-linear flex flex-col h-[56%] bg-[#6c5ce7bb] w-[160px] pt-1" : "fixed top-9 -right-[100%] transition-all ease-linear flex flex-col h-[55%] bg-[#6c5ce7bb] w-[160px] pt-1"}>
  
 
-    <div className="absolute top-0 right-0 cursor-pointer" onClick={()=>setOpen(!open)}><i className="fa-solid fa-xmark bg-[#8376e6] px-2 text-white round text-xl hover:bg-red-600 hover:text-white"></i></div>
+    {/* <div className="absolute top-0 right-0 cursor-pointer"><i className="fa-solid fa-xmark bg-[#8376e6] px-2 text-white round text-xl hover:bg-red-600 hover:text-white"></i></div> */}
 
         {MobileItem.map((item) => {
           return (
@@ -140,6 +146,7 @@ const Sidebar = ({ children }) => {
               className="flex justify-between text-white ml-3 mr-2"
               title={item.navItemName}
               end
+              onClick={()=>setOpen(false)}
             >
               <div className="flex items-center gap-3 py-3 ">
                 <i className={item.icon}></i>

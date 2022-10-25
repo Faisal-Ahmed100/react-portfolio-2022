@@ -2,11 +2,12 @@ import React from "react";
 import BannerImg from "../img/banner.png";
 
 const Home = () => {
+  
   return (
     <section className="w-full xl:h-[95vh] md:h-screen  flex justify-center items-center">
      
       <div className="flex items-center flex-col md:flex-row gap-5 justify-between w-full md:h-full">
-        <div className="flex flex-col md:pl-12 order-2 md:order-1 mt-6 md:mt-0 md:absolute xl:static">
+        <div className="flex flex-col md:pl-12 order-2 md:order-1 mt-6 md:mt-10 md:absolute xl:static">
           <h4 className="flex flex-row gap-2 md:text-lg text-normal text-gray-500 font-normal uppercase">
             <span className="md:tracking-[5px]">HI</span>
             <span className="md:tracking-[5px]">THERE!</span>
@@ -29,8 +30,10 @@ const Home = () => {
           </div>
         </div>
       
-    
-        <img className="h-full w-full sm:h-full md:w-full object-cover order-1 md:order-2" src={BannerImg} alt="Banner img" />
+    <div className="w-full h-[90vh] sm:h-screen -mt-[120px] sm:-mt-30 md:mt-0 order-1 md:order-2">
+      <img className="h-full w-full sm:h-full md:w-full object-cover " src={BannerImg} alt="Banner img" />
+    </div>
+        
       
           
         
