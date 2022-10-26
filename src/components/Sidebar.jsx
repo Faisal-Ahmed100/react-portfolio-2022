@@ -99,11 +99,11 @@ const Sidebar = ({ children }) => {
           </p>
           <div className="flex items-center gap-1">
             <div className="flex ">
-              <i className="fa-solid fa-star text-[12px] text-yellow-500"></i>
-              <i className="fa-solid fa-star text-[12px] text-yellow-500"></i>
-              <i className="fa-solid fa-star text-[12px] text-yellow-500"></i>
-              <i className="fa-solid fa-star text-[12px] text-yellow-500"></i>
-              <i className="fa-solid fa-star text-[12px] text-yellow-500"></i>
+              <i className="fa-solid fa-star text-[12px] text-[#6c5ce7]"></i>
+              <i className="fa-solid fa-star text-[12px] text-[#6c5ce7]"></i>
+              <i className="fa-solid fa-star text-[12px] text-[#6c5ce7]"></i>
+              <i className="fa-solid fa-star text-[12px] text-[#6c5ce7]"></i>
+              <i className="fa-solid fa-star text-[12px] text-[#6c5ce7]"></i>
             </div>
             <p className="text-sm">(5 Review)</p>
           </div>
@@ -158,7 +158,7 @@ const Sidebar = ({ children }) => {
 
        
       </div>
-      <main className="w-full px-3 md:px-0 md:pl-6 md:ml-[15rem] lg:h-screen">
+      <main className="w-full px-3 md:px-0 md:pl-6 md:ml-[15rem] ">
         {children}
       </main>
        

@@ -23,8 +23,22 @@ body{
 }
 }
 
+@media (max-width:385px) {
+ .emailName{
+    margin-right: 59px;
+ }   
+}
+
 .round{
     border-bottom-left-radius: 5px;
 }
 
-
+.progress {
+	border-radius: 20px;
+	position: relative;
+	height: 8px;
+	width: 100%;
+}
+.progress-done {
+	transition: 1.5s ease-in-out 0.3s;
+}

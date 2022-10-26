@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <section className="w-full lg:h-screen lg:px-12 md:px-8 py-10 md:py-0">
+    <section className="w-full lg:h-screen lg:px-11 md:px-8 py-10 md:py-0">
       <div className="flex flex-col h-full md:h-full md:py-10 justify-center items-start">
-      <h2 className="text-4xl mb-6 flex items-center font-bold text-gray-700">
+      <h2 className="text-4xl mb-6 flex uppercase items-center font-bold text-gray-700">
            
            <p className="border-b-[2px] mr-2 border-b-[#6c5ce7]">ABOUT</p>
            <p className="text-[#6c5ce7]">ME</p>
@@ -16,8 +16,8 @@ const About = () => {
             PERSONAL INFO
           </span>
         </h3>
-        <p className="text-gray-600">
-          Hi there! I am Faisal Ahmed from BD. I am a professional front-end
+        <p className="text-gray-600 capitalize">
+          Hi there! I am Faisal Ahmed from <span className="font-medium">Bangladesh</span> . I am a professional front-end
           Web Developer since 2018. I have 4 years of experience in Responsive
           Design which is useful for supporting your site on any device.
           Front-end Developer is not only my Profession, it is also my hobby
@@ -53,36 +53,36 @@ const About = () => {
 
           <div className="flex flex-col gap-3">
             <div className="flex  capitalize text-md">
-              <h3 className="text-gray-800 mr-10 font-medium">Phone</h3>
+              <h3 className="text-gray-800 lg:mr-10 mr-[77px] font-medium">Phone</h3>
               <p className="text-gray-600">: 01729-462003</p>
             </div>
             <div className="flex  capitalize text-md">
-              <h3 className="text-gray-800 mr-[1.6rem] font-medium">
+              <h3 className="text-gray-800 lg:mr-[1.6rem] mr-[62px]  font-medium">
                 Address
               </h3>
               <p className="text-gray-600">: Rajshahi, Bangladesh</p>
             </div>
             <div className="flex  capitalize text-md">
-              <h3 className="text-gray-800 mr-[3rem] font-medium">email</h3>
+              <h3 className="text-gray-800 lg:mr-[3rem] font-medium mr-[85px] emailName">email</h3>
               <p className="text-gray-600">: princepavel100@gmail.com</p>
             </div>
             <div className="flex  capitalize text-md">
-              <h3 className="text-gray-800 mr-8 font-medium">spoken</h3>
+              <h3 className="text-gray-800 lg:mr-8 font-medium mr-[70px] ">spoken</h3>
               <p className="text-gray-600">: English-Bangali</p>
             </div>
             <div className="flex  capitalize text-md">
-              <h3 className="text-gray-800 mr-11 font-medium">Skype</h3>
-              <p className="text-gray-600">: faisal.100</p>
+              <h3 className="text-gray-800 lg:mr-[9px] font-medium mr-[47px] ">WhatsApp</h3>
+              <p className="text-gray-600">: 01729-462003</p>
             </div>
           </div>
         </div>
-        <div className="flex justify-start items-start flex-row gap-5  lg:mb-0 mt-12">
+        <div className="flex justify-start items-start flex-row gap-4 sm:gap-5  lg:mb-0 mt-12">
  <Link to='/'>
- <button className="uppercase bg-[#6c5ce7] border-2 border-[#6c5ce7] transition-all ease-linear text-white text-sm px-5 rounded-sm py-3 hover:border-2 hover:border-[#6c5ce7] hover:bg-white font-medium hover:text-[#6c5ce7]">download resume</button>
+ <button className="uppercase bg-[#6c5ce7] border-2 border-[#6c5ce7] transition-all ease-linear text-white text-sm px-5 rounded-sm py-3 hover:border-2 hover:border-[#6c5ce7] hover:bg-transparent font-medium hover:text-[#6c5ce7]">download resume</button>
  </Link>
      
    <Link to='/contact'>
-   <button className="uppercase hover:bg-[#6c5ce7] hover:text-white transition-all ease-linear text-sm px-5 rounded-sm py-3 font-medium border-2 border-[#6c5ce7] bg-white text-[#6c5ce7]">contact me</button>
+   <button className="uppercase hover:bg-[#6c5ce7] hover:text-white transition-all ease-linear text-sm px-5 rounded-sm py-3 font-medium border-2 border-[#6c5ce7] bg-transparent text-[#6c5ce7]">contact me</button>
    </Link>
      
  </div> 
