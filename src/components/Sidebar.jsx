@@ -158,7 +158,7 @@ const Sidebar = ({ children }) => {
 
        
       </div>
-      <main className="w-full px-3 md:px-0 md:pl-6 md:ml-[15rem] md:h-screen">
+      <main className="w-full px-3 md:px-0 md:pl-6 md:ml-[15rem] lg:h-screen">
         {children}
       </main>
        

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Skills = () => {
   return (
-    <div>
+    <div className='h-screen flex justify-center items-center'>
       Skills
     </div>
   )
