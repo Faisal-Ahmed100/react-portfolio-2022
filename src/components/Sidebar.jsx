@@ -18,10 +18,6 @@ const Sidebar = ({ children }) => {
       name: "Skills",
     },
     {
-      path: "/experience",
-      name: "Experience",
-    },
-    {
       path: "/education",
       name: "Education",
     },
@@ -53,12 +49,6 @@ const Sidebar = ({ children }) => {
       name: "Skills",
       icon: "fa-solid fa-graduation-cap",
       navItemName: "Skills",
-    },
-    {
-      path: "/experience",
-      name: "Experience",
-      icon: "fa-solid fa-briefcase",
-      navItemName: "Experience",
     },
     {
       path: "/education",
@@ -107,7 +97,6 @@ const Sidebar = ({ children }) => {
             </div>
             <p className="text-sm">(5 Review)</p>
           </div>
-          <hr />
         </div>
 
         <div>
@@ -128,20 +117,21 @@ const Sidebar = ({ children }) => {
   {/* mobile view  */}
   {
     open ? 
-    <div className="fixed top-0 right-5 flex justify-center items-center cursor-pointer md:hidden" onClick={()=>setOpen(!open)}><i className="fa-solid fa-xmark bg-[#8376e6d3] px-2 text-white text-3xl "></i></div>
+    <div className="fixed top-0 right-5 flex justify-center items-center z-50 cursor-pointer md:hidden" onClick={()=>setOpen(!open)}><i className="fa-solid fa-xmark bg-[#8376e6d3] px-2 text-white text-3xl "></i></div>
      :
-     <div className="fixed top-0 right-5 flex justify-center items-center cursor-pointer md:hidden" onClick={()=>setOpen(!open)}><i className="fa-solid fa-bars bg-[#8376e6d5] px-2 text-white text-3xl "></i></div>
+     <div className="fixed top-0 right-5 flex justify-center z-50 items-center cursor-pointer md:hidden" onClick={()=>setOpen(!open)}><i className="fa-solid fa-bars bg-[#8376e6d5] px-2 text-white text-3xl "></i></div>
   }
   
 
-  <div className={open ? "fixed top-9 right-0 transition-all ease-linear flex flex-col h-[56%] bg-[#6c5ce7bb] w-[160px] pt-1" : "fixed top-9 -right-[100%] transition-all ease-linear flex flex-col h-[55%] bg-[#6c5ce7bb] w-[160px] pt-1"}>
+  <div className={open ? "fixed top-9 right-0 transition-all ease-linear flex flex-col h-[56%] bg-[#6c5ce7bb] w-[160px] pt-1 z-50" : "fixed top-9 -right-[100%] transition-all ease-linear flex flex-col h-[55%] bg-[#6c5ce7bb] w-[160px] pt-1 z-50"}>
  
 
     {/* <div className="absolute top-0 right-0 cursor-pointer"><i className="fa-solid fa-xmark bg-[#8376e6] px-2 text-white round text-xl hover:bg-red-600 hover:text-white"></i></div> */}
 
-        {MobileItem.map((item) => {
+        {MobileItem.map((item, index) => {
           return (
             <NavLink
+            key={index}
               to={item.path}
               className="flex justify-between text-white ml-3 mr-2"
               title={item.navItemName}

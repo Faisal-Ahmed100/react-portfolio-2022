@@ -1,106 +1,151 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-
+import React, { useState } from "react";
+import GoogleMap from "../components/GoogleMap";
 const Contact = () => {
+  const [open,setOpen]=useState(false);
+  const handleClick=()=>{
+    setOpen(!open);
+  }
   return (
-    <div>
-       
-     
-  <section className="w-full xl:h-[95vh] md:h-screen flex justify-center items-center md:px-8 lg:px-12">
-    <div className="flex flex-col h-screen justify-center items-start">
-      <div>
-        <h2 className="text-4xl mb-6 flex items-center font-bold text-gray-700">
-           
-          <p className="border-b-[2px] mr-2 border-b-[#6c5ce7]">ABOUT</p>
-          <p className="text-[#6c5ce7]">ME</p>
-        </h2>
-        <div className="flex flex-col">
-        <h2 className="flex gap-2 items-center mb-2">
-          <i className="fa-solid fa-user text-sm text-gray-500"></i>
-          <span className="text-md text-gray-700 font-medium">
-            PERSONAL INFO
-          </span>
-        </h2>
-        <p className="text-gray-600">
-          Hi there! I am Faisal Ahmed from BD. I am a professional front-end
-          Web Developer since 2018. I have 4 years of experience in Responsive
-          Design which is useful for supporting your site on any device.
-          Front-end Developer is not only my Profession, it is also my hobby
-          and my Passion.
-        </p>
-      </div>
-      </div>
-        
-
-      <div>
-        <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 mt-8">
-          <div className="flex flex-col gap-3">
-            <div className="flex  capitalize text-md">
-              <h3 className="text-gray-800 mr-10 font-medium">First Name</h3>
-              <p className="text-gray-600">: Faisal</p>
-            </div>
-            <div className="flex  capitalize text-md">
-              <h3 className="text-gray-800 mr-10 font-medium">Last Name</h3>
-              <p className="text-gray-600">: ahmad</p>
-            </div>
-            <div className="flex capitalize text-md">
-              <h3 className="text-gray-800 font-medium mr-6">
-                Date of birth
-              </h3>
-              <p className="text-gray-600">: 30 october 2003</p>
-            </div>
-            <div className="flex capitalize text-md">
-              <h3 className="text-gray-800 mr-[2.4rem] font-medium">
-                Nationality
-              </h3>
-              <p className="text-gray-600">: Bangladesh</p>
-            </div>
-            <div className="flex  capitalize text-md">
-              <h3 className="text-gray-800 mr-12 font-medium">Freelance</h3>
-              <p className="text-gray-600">: Available</p>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-3">
-            <div className="flex  capitalize text-md">
-              <h3 className="text-gray-800 mr-10 font-medium">Phone</h3>
-              <p className="text-gray-600">: 01729-462003</p>
-            </div>
-            <div className="flex  capitalize text-md">
-              <h3 className="text-gray-800 mr-[1.6rem] font-medium">
-                Address
-              </h3>
-              <p className="text-gray-600">: Rajshahi, Bangladesh</p>
-            </div>
-            <div className="flex  capitalize text-md">
-              <h3 className="text-gray-800 mr-[3rem] font-medium">email</h3>
-              <p className="text-gray-600">: princepavel100@gmail.com</p>
-            </div>
-            <div className="flex  capitalize text-md">
-              <h3 className="text-gray-800 mr-8 font-medium">spoken</h3>
-              <p className="text-gray-600">: English-Bangali</p>
-            </div>
-            <div className="flex  capitalize text-md">
-              <h3 className="text-gray-800 mr-11 font-medium">Skype</h3>
-              <p className="text-gray-600">: faisal.100</p>
-            </div>
+    <>
+    {
+      open && <div  className="fixed bg-black/70 z-10 top-0 left-0 h-full w-full flex justify-center items-center px-3">
+        <div className="md:w-[80%] md:h-[90%] w-[95%] mx-auto h-2/3 bg-white z-50 absolute">
+          <div className="absolute -top-[35px] right-0 cursor-pointer" onClick={()=>setOpen(false)}><i className="fa-solid fa-xmark text-3xl text-white"></i></div>
+          <div className="flex justify-center items-center h-full">
+           <GoogleMap />
           </div>
         </div>
-        <div className="flex justify-start items-start flex-row gap-5 mb-12 lg:mb-0 mt-12">
- <Link to='/'>
- <button className="uppercase bg-[#6c5ce7] border-2 border-[#6c5ce7] transition-all ease-linear text-white text-sm px-5 rounded-sm py-3 hover:border-2 hover:border-[#6c5ce7] hover:bg-white font-medium hover:text-[#6c5ce7]">download resume</button>
- </Link>
-     
-   <Link to='/contact'>
-   <button className="uppercase hover:bg-[#6c5ce7] hover:text-white transition-all ease-linear text-sm px-5 rounded-sm py-3 font-medium border-2 border-[#6c5ce7] bg-white text-[#6c5ce7]">contact me</button>
-   </Link>
-     
- </div> 
       </div>
-    </div>
-  </section>
-    </div>
-  )
-}
+    }
+    
+    
+      <section  className="w-full lg:h-full xl:min-h-screen lg:px-11 md:px-8 py-10 md:py-0">
+      <div className="flex flex-col h-full md:h-full md:py-12 justify-center items-start">
+        <h2 className="text-4xl mb-6 flex items-center uppercase font-bold text-gray-700">
+          <p className="border-b-[2px] mr-2 border-b-[#6c5ce7]">GET IN</p>
+          <p className="text-[#6c5ce7] animate-pulse">TOUCH</p>
+        </h2>
+        <h3 className="flex gap-2 items-center mb-2">
+          <i className="fa-solid fa-envelope text-sm text-gray-500"></i>
 
-export default Contact
+          <span className="text-md text-gray-700 font-medium">
+            FEEL FREE TO DROP ME A LINE
+          </span>
+        </h3>
+        <p className="text-gray-600">
+        Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.
+
+
+        </p>
+
+        <div className="flex justify-start items-center flex-col md:flex-row gap-5 w-full mt-8">
+          <div className="flex flex-col gap-5 w-full">
+            <div className="flex flex-col justify-start items-start">
+              <h2 className="text-gray-700 font-medium pb-2 uppercase">
+                location
+              </h2>
+              <p className="text-gray-600 capitalize">
+                Puthia, Rajshahi, Bangladesh
+              </p>
+
+              <button className="text-gray-600 hover:border-b-gray-500 pt-1 border-b border-b-[#6c5ce7] hover:text-[#6c5ce7] uppercase" onClick={handleClick}>
+                View on map
+              </button>
+            </div>
+            <div className="flex flex-col justify-start items-start">
+              <h2 className="text-gray-700 font-medium pb-2 uppercase">
+                contact
+              </h2>
+              <a
+                href="mailto:princepavel100@gmail.com"
+                className="text-gray-600 mb-1 capitalize hover:text-[#6c5ce7]"
+              >
+                princepavel100@gmail.com
+              </a>
+              <a
+                href="tel:01729-462003"
+                className="text-gray-600 capitalize hover:text-[#6c5ce7] "
+              >
+                01729-462003
+              </a>
+            </div>
+            {/* socal */}
+            <div className="flex flex-col justify-start items-start">
+              <h2 className="text-gray-700 font-medium pb-2">SOCIAL</h2>
+              <div className="flex gap-3">
+                <a href="https://www.facebook.com/profile.php?id=100009264083773" target='__blank'>
+                   <i className="fa-brands fa-facebook-f w-[35px] h-[35px] flex text-white hover:bg-transparent hover:border-[#6c5ce7] border hover:text-[#6c5ce7] cursor-pointer justify-center items-center rounded-full p-1 transition-all bg-[#6c5ce7] "></i>
+                </a>
+               
+                <a href="https://twitter.com/coderfaisal100" target='__blank'>
+
+                   <i className="fa-brands fa-twitter w-[35px] h-[35px] flex text-white hover:bg-transparent hover:border-[#6c5ce7] border hover:text-[#6c5ce7] cursor-pointer justify-center items-center rounded-full p-1 transition-all bg-[#6c5ce7] "></i>
+                </a>
+               
+                <i className="fa-brands fa-instagram w-[35px] h-[35px] flex text-white hover:bg-transparent hover:border-[#6c5ce7] border hover:text-[#6c5ce7] cursor-pointer justify-center items-center rounded-full p-1 transition-all bg-[#6c5ce7] "></i>
+                <i className="fa-brands fa-linkedin-in w-[35px] h-[35px] flex text-white hover:bg-transparent hover:border-[#6c5ce7] border hover:text-[#6c5ce7] cursor-pointer justify-center items-center rounded-full p-1 transition-all bg-[#6c5ce7] " onClick={()=>setOpen(alert("Ops! I don't have an account linkedin🙄 but coming soon"))}></i>
+               
+                <i className="fa-brands fa-whatsapp w-[35px] h-[35px] flex text-white hover:bg-transparent hover:border-[#6c5ce7] border hover:text-[#6c5ce7] cursor-pointer justify-center items-center rounded-full p-1 transition-all bg-[#6c5ce7] " title="01729462003" onClick={()=>setOpen(alert('WhatsApp no: 01729462003'))}></i>
+              </div>
+            </div>
+          </div>
+          {/* form */}
+          <div className="w-full">
+            <form className="flex flex-col gap-4">
+              <div className="relative flex items-center">
+                <input
+                  type="text"
+                  className="py-2 pl-8 pr-3 text-md w-full bg-transparent text-gray-600 border border-gray-400 rounded-sm hover:border-[#6c5ce7] hover:shadow outline-none"
+                  placeholder="Enter Name"
+                  name=""
+                  id=""
+                />
+                <i className="fa-solid absolute left-[10px] top-[10px] fa-user text-sm text-gray-400"></i>
+              </div>
+
+              <div className="relative flex items-center">
+                <input
+                  type="text"
+                  className="py-2 pl-8 pr-3 text-md w-full bg-transparent text-gray-600 border border-gray-400 rounded-sm hover:border-[#6c5ce7] hover:shadow outline-none"
+                  placeholder="Your Email"
+                  
+                />
+                <i className="fa-solid fa-envelope absolute left-[10px] top-[10px] text-sm text-gray-400"></i>
+              </div>
+              <div className="relative flex items-center">
+                <input
+                  type="text"
+                  className="py-2 pl-8 pr-3 text-md w-full bg-transparent text-gray-600 border border-gray-400 rounded-sm hover:border-[#6c5ce7] hover:shadow outline-none"
+                  placeholder="Enter Subject"
+                  name=""
+                  id=""
+                />
+                <i className="fa-sharp fa-solid fa-share absolute left-[10px] top-[10px]  text-sm text-gray-400"></i>
+              </div>
+              <div className="relative flex items-center">
+                <textarea
+                  type="text"
+                  className="py-2 pl-8 pr-3 text-md w-full bg-transparent text-gray-600 border border-gray-400 rounded-sm hover:border-[#6c5ce7] hover:shadow outline-none h-[90px]"
+                  placeholder="Write Message..."
+                  name=""
+                  id=""
+                />
+                <i className="fa-solid fa-message absolute left-[10px] top-[10px]  text-sm text-gray-400"></i>
+              </div>
+              <div className="flex justify-start items-start">
+                 <button type="submit" className="uppercase bg-[#6c5ce7] border-2 border-[#6c5ce7] transition-all ease-linear text-white text-sm px-5 rounded-sm py-3 hover:border-2 hover:border-[#6c5ce7] hover:bg-transparent font-medium hover:text-[#6c5ce7]">Submit</button>
+              </div>
+             
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    
+    </>
+    
+  );
+};
+
+export default Contact;

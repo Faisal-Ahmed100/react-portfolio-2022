@@ -1,44 +1,134 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background-color: #F8F8F8;
-    font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
-}
-@media (min-width:769px) {
-    .active{
-        color: #6c5ce7;
-        border-bottom: 1px solid #6c5ce7;
-    }
+body {
+  background-color: #f8f8f8;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
+::selection{
+background-color: #6c5ce7;
+color: white;
+}
 
-@media (max-width:768px) {
-    .active{
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+::-webkit-scrollbar-thumb{
+    background-color: #6c5ce7;
+    border-radius: 10px;
+}
+
+@media (min-width: 769px) {
+  .active {
+    color: #6c5ce7;
+    border-bottom: 1px solid #6c5ce7;
+  }
+}
+
+@media (max-width: 768px) {
+  .active {
     color: white;
     border-bottom: 1px solid white;
-}
+  }
 }
 
-@media (max-width:385px) {
- .emailName{
+@media (max-width: 385px) {
+  .emailName {
     margin-right: 59px;
- }   
+  }
 }
 
-.round{
-    border-bottom-left-radius: 5px;
+.round {
+  border-bottom-left-radius: 5px;
 }
 
 .progress {
-	border-radius: 20px;
-	position: relative;
-	height: 8px;
-	width: 100%;
+  border-radius: 20px;
+  position: relative;
+  height: 8px;
+  width: 100%;
 }
 .progress-done {
-	transition: 1.5s ease-in-out 0.3s;
+  transition: 1.5s ease-in-out 0.3s;
+}
+
+/* tab css */
+
+.tab {
+  width: 100%;
+  height: 100vh;
+}
+
+.tabwapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.tab-center {
+  width: 60%;
+  height: 50vh;
+  border: 1px solid gray;
+}
+.tab-btn {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: aliceblue;
+}
+.btn-1 {
+  background-color: green;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.active-tabs {
+  background: white;
+  border-bottom: 1px solid transparent;
+}
+.btn-2 {
+  background-color: green;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+.btn-3 {
+  background-color: green;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+.tab-contant-1 {
+  width: 100%;
+  padding: 20px;
+  display: none;
+  flex-direction: column;
+}
+.tab-contant-1 h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.active-contant {
+  display: flex;
+}
+
+.gmap_canvas {
+  width: 100%;
+  height: 100%;
 }

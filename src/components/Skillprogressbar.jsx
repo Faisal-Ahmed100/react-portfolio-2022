@@ -13,7 +13,7 @@ const Skillprogressbar = ({done,text}) => {
     <div className='mb-6'>
       <div>
             <div className='flex justify-start items-start mb-2'>
-              <p className='uppercase'>{text}</p>
+              <p className='uppercase text-gray-700'>{text}</p>
             </div>
            <div className='progress bg-slate-200 border border-[#6c5ce7]'>
              <div className='progress-done bg-[#6c5ce7] rounded-2xl text-white flex justify-end items-center h-full w-0 opacity-0 transition-all' style={style}>
