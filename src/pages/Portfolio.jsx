@@ -36,7 +36,7 @@ const Portfolio = () => {
             onClick={() => ClickTab(1)}
             className={
               tab === 1
-                ? "uppercase bg-[#6c5ce7] border-2 border-[#6c5ce7] transition-all ease-linear text-white text-sm px-5 rounded-sm py-2 hover:border-2 hover:border-[#6c5ce7] hover:bg-transparent font-medium hover:text-[#6c5ce7]"
+                ? "uppercase bg-[#6c5ce7] border-2 border-[#6c5ce7] transition-all ease-linear text-white text-sm px-5 rounded-sm py-2 hover:border-2 hover:border-[#6c5ce7] md:hover:bg-transparent font-medium md:hover:text-[#6c5ce7]"
                 : "uppercase hover:bg-[#6c5ce7] hover:text-white transition-all ease-linear text-sm px-5 rounded-sm py-2 font-medium border-2 border-[#6c5ce7] bg-transparent text-[#6c5ce7]"
             }
           >
@@ -46,7 +46,7 @@ const Portfolio = () => {
             onClick={() => ClickTab(2)}
             className={
               tab === 2
-                ? "uppercase bg-[#6c5ce7] border-2 border-[#6c5ce7] transition-all ease-linear text-white text-sm px-5 rounded-sm py-2 hover:border-2 hover:border-[#6c5ce7] hover:bg-transparent font-medium hover:text-[#6c5ce7]"
+                ? "uppercase bg-[#6c5ce7] border-2 border-[#6c5ce7] transition-all ease-linear text-white text-sm px-5 rounded-sm py-2 hover:border-2 hover:border-[#6c5ce7] md:hover:bg-transparent font-medium md:hover:text-[#6c5ce7]"
                 : "uppercase hover:bg-[#6c5ce7] hover:text-white transition-all ease-linear text-sm px-5 rounded-sm py-2 font-medium border-2 border-[#6c5ce7] bg-transparent text-[#6c5ce7]"
             }
           >
@@ -57,7 +57,7 @@ const Portfolio = () => {
             onClick={() => ClickTab(3)}
             className={
               tab === 3
-                ? "uppercase bg-[#6c5ce7] border-2 border-[#6c5ce7] transition-all ease-linear text-white text-sm px-5 rounded-sm py-2 hover:border-2 hover:border-[#6c5ce7] hover:bg-transparent font-medium hover:text-[#6c5ce7]"
+                ? "uppercase bg-[#6c5ce7] border-2 border-[#6c5ce7] transition-all ease-linear text-white text-sm px-5 rounded-sm py-2 hover:border-2 hover:border-[#6c5ce7] md:hover:bg-transparent font-medium md:hover:text-[#6c5ce7]"
                 : "uppercase hover:bg-[#6c5ce7] hover:text-white transition-all ease-linear text-sm px-5 rounded-sm py-2 font-medium border-2 border-[#6c5ce7] bg-transparent text-[#6c5ce7]"
             }
           >
@@ -68,7 +68,7 @@ const Portfolio = () => {
             onClick={() => ClickTab(4)}
             className={
               tab === 4
-                ? "uppercase bg-[#6c5ce7] border-2 border-[#6c5ce7] transition-all ease-linear text-white text-sm px-5 rounded-sm py-2 hover:border-2 hover:border-[#6c5ce7] hover:bg-transparent font-medium hover:text-[#6c5ce7]"
+                ? "uppercase bg-[#6c5ce7] border-2 border-[#6c5ce7] transition-all ease-linear text-white text-sm px-5 rounded-sm py-2 hover:border-2 hover:border-[#6c5ce7] md:hover:bg-transparent font-medium md:hover:text-[#6c5ce7]"
                 : "uppercase hover:bg-[#6c5ce7] hover:text-white transition-all ease-linear text-sm px-5 rounded-sm py-2 font-medium border-2 border-[#6c5ce7] bg-transparent text-[#6c5ce7]"
             }
           >
