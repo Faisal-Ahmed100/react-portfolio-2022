@@ -9,10 +9,33 @@ import Skills from './pages/Skills'
 import Education from './pages/Education'
 import Portfolio from './pages/Portfolio'
 import Error from './pages/Error'
+import { useState } from 'react'
+import { useEffect } from 'react';
+import BounceLoader from "react-spinners/BounceLoader";
 
 const App = () => {
+  const [loading,setLoading]=useState(false);
+  useEffect(()=>{
+    setLoading(true);
+    setTimeout(()=>{
+setLoading(false);
+    },4000);
+  },[]);
   return (
-    <div className='bg-gradient-to-r from-indigo-50 via-purple-200 to-indigo-50'>
+    <>
+    {
+      loading ? 
+      <div className='flex justify-center items-center h-screen'>
+
+         <BounceLoader
+      color={'#6c5ce7'}
+      loading={loading}
+      size={65}
+    />
+      </div>
+     
+      :
+      <div className='bg-gradient-to-r from-indigo-50 via-purple-200 to-indigo-50'>
        <BrowserRouter>
     <Sidebar>
       <Routes>
@@ -27,6 +50,11 @@ const App = () => {
       </Sidebar>
     </BrowserRouter>
     </div>
+    }
+    
+     
+    </>
+   
    
   )
 }

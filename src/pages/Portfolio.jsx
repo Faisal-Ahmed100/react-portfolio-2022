@@ -88,7 +88,7 @@ const Portfolio = () => {
           <div className="flex flex-col box relative group shadow group-hover:shadow-sm">
             <PortfolioSingle
               Img={Img9}
-              Links="https://blissful-bartik-1fc5bf.netlify.app/"
+              Links="https://faisal-ahmed100.github.io/my-protfolio-site/?fbclid=IwAR2_cDB3KFDmEmqgt3w2dJhI2nLzPx5KMNHIl5T_YFI0uAWg7sWWw7eU0V4"
             />
           </div>
           <div className="flex flex-col box relative group shadow group-hover:shadow-sm">
@@ -194,7 +194,7 @@ const Portfolio = () => {
          <div className="flex flex-col box relative group shadow group-hover:shadow-sm">
             <PortfolioSingle
               Img={Img9}
-              Links="https://blissful-bartik-1fc5bf.netlify.app/"
+              Links="https://faisal-ahmed100.github.io/my-protfolio-site/?fbclid=IwAR2_cDB3KFDmEmqgt3w2dJhI2nLzPx5KMNHIl5T_YFI0uAWg7sWWw7eU0V4"
             />
           </div>
           <div className="flex flex-col box relative group shadow group-hover:shadow-sm">

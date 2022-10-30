@@ -91,14 +91,13 @@ const Contact = () => {
           </div>
           {/* form */}
           <div className="w-full">
-            <form className="flex flex-col gap-4">
+            <form action="https://formspree.io/f/xgeqnqll" method="POST" className="flex flex-col gap-4">
               <div className="relative flex items-center">
                 <input
                   type="text"
                   className="py-2 pl-8 pr-3 text-md w-full bg-transparent text-gray-600 border border-gray-400 rounded-sm hover:border-[#6c5ce7] hover:shadow outline-none"
                   placeholder="Enter Name"
-                  name=""
-                  id=""
+                  name="name"
                 />
                 <i className="fa-solid absolute left-[10px] top-[10px] fa-user text-sm text-gray-400"></i>
               </div>
@@ -108,6 +107,7 @@ const Contact = () => {
                   type="text"
                   className="py-2 pl-8 pr-3 text-md w-full bg-transparent text-gray-600 border border-gray-400 rounded-sm hover:border-[#6c5ce7] hover:shadow outline-none"
                   placeholder="Your Email"
+                  name="email"
                   
                 />
                 <i className="fa-solid fa-envelope absolute left-[10px] top-[10px] text-sm text-gray-400"></i>
@@ -117,8 +117,7 @@ const Contact = () => {
                   type="text"
                   className="py-2 pl-8 pr-3 text-md w-full bg-transparent text-gray-600 border border-gray-400 rounded-sm hover:border-[#6c5ce7] hover:shadow outline-none"
                   placeholder="Enter Subject"
-                  name=""
-                  id=""
+                  name="subject"
                 />
                 <i className="fa-sharp fa-solid fa-share absolute left-[10px] top-[10px]  text-sm text-gray-400"></i>
               </div>
@@ -127,8 +126,7 @@ const Contact = () => {
                   type="text"
                   className="py-2 pl-8 pr-3 text-md w-full bg-transparent text-gray-600 border border-gray-400 rounded-sm hover:border-[#6c5ce7] hover:shadow outline-none h-[90px]"
                   placeholder="Write Message..."
-                  name=""
-                  id=""
+                  name="message"
                 />
                 <i className="fa-solid fa-message absolute left-[10px] top-[10px]  text-sm text-gray-400"></i>
               </div>
