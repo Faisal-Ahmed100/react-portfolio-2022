@@ -123,10 +123,10 @@ const Sidebar = ({ children }) => {
   }
   
 
-  <div className={open ? "fixed top-9 right-0 transition-all ease-linear flex flex-col h-[56%] bg-[#6c5ce7bb] w-[160px] pt-1 z-50" : "fixed top-9 -right-[100%] transition-all ease-linear flex flex-col h-[55%] bg-[#6c5ce7bb] w-[160px] pt-1 z-50"}>
+  <div className={open ? "fixed top-9 right-0 transition-all ease-linear flex flex-col pb-[15px] bg-[#6c5ce7bb] w-[160px] pt-1 z-50" : "fixed top-9 -right-[100%] transition-all ease-linear flex flex-col h-[55%] bg-[#6c5ce7bb] w-[160px] pt-1 z-50"}>
  
 
-    {/* <div className="absolute top-0 right-0 cursor-pointer"><i className="fa-solid fa-xmark bg-[#8376e6] px-2 text-white round text-xl hover:bg-red-600 hover:text-white"></i></div> */}
+   
 
         {MobileItem.map((item, index) => {
           return (

@@ -33,7 +33,7 @@ const About = () => {
               <h3 className="text-gray-800 mr-10 font-medium">Last Name</h3>
               <p className="text-gray-600">: ahmad</p>
             </div>
-            <div className="flex  capitalize text-md">
+            <div className="flex capitalize text-md">
               <h3 className="text-gray-800 mr-[93px] font-medium">age</h3>
               <p className="text-gray-600">: 18 Years</p>
             </div>
