@@ -81,101 +81,101 @@ const Portfolio = () => {
         <div
           className={
             tab === 1
-              ? "flex md:justify-between lg:justify-between  items-center justify-center flex-wrap gap-6 md:gap-5 w-full mt-12"
+              ? "flex md:justify-between lg:justify-between  items-center justify-center flex-wrap gap-6 lg:gap-y-[30px] md:gap-5 w-full mt-12"
               : "hidden"
           }
         >
-          <div className="flex flex-col box relative group shadow group-hover:shadow-sm">
+          <div className="flex flex-col box relative group shadow group-hover:shadow-sm md:w-[47%] lg:w-[31%] sm:w-[48%] sm:h-[200px] md:h-[25vh] lg:h-[35vh]">
             <PortfolioSingle
               Img={Img9}
               Links="https://faisal-ahmed100.github.io/my-protfolio-site/?fbclid=IwAR2_cDB3KFDmEmqgt3w2dJhI2nLzPx5KMNHIl5T_YFI0uAWg7sWWw7eU0V4"
             />
           </div>
-          <div className="flex flex-col box relative group shadow group-hover:shadow-sm">
+          <div className="flex flex-col box relative group shadow group-hover:shadow-sm md:w-[47%] lg:w-[31%] md:h-[25vh] lg:h-[35vh] sm:w-[48%] sm:h-[200px] ">
             <PortfolioSingle
               Img={Img2}
               Links="https://faisal-nft-project.netlify.app"
             />
           </div>
-          <div className="flex flex-col box relative group shadow group-hover:shadow-sm">
+          <div className="flex flex-col box relative group shadow group-hover:shadow-sm md:w-[47%] lg:w-[31%] md:h-[25vh] lg:h-[35vh] sm:w-[48%] sm:h-[200px]">
             <PortfolioSingle
               Img={Img4}
               Links="https://faisal123-react-app.netlify.app"
             />
           </div>
-          <div className="flex flex-col box relative group shadow group-hover:shadow-sm">
+          <div className="flex flex-col box relative group shadow group-hover:shadow-sm md:w-[47%] lg:w-[31%] md:h-[25vh] lg:h-[35vh] sm:w-[48%] sm:h-[200px]">
             <PortfolioSingle
               Img={Img3}
               Links="https://faisal-car-landing-page-bootstrap-5.netlify.app"
             />
           </div>
-          <div className="flex flex-col box relative group shadow group-hover:shadow-sm">
+          <div className="flex flex-col box relative group shadow group-hover:shadow-sm md:w-[47%] lg:w-[31%] md:h-[25vh] lg:h-[35vh] sm:w-[48%] sm:h-[200px]">
             <PortfolioSingle
               Img={Img5}
               Links="https://faisal-nextjs-app.netlify.app/"
             />
           </div>
-          <div className="flex flex-col box relative group shadow group-hover:shadow-sm">
+          <div className="flex flex-col box relative group shadow group-hover:shadow-sm md:w-[%] lg:w-[31%] md:h-[25vh] lg:h-[35vh] sm:w-[48%] sm:h-[200px]">
             <PortfolioSingle
               Img={Img6}
               Links="https://faisal-full-ecomarce.netlify.app/"
             />
           </div>
-          <div className="flex flex-col box relative group shadow group-hover:shadow-sm">
+          <div className="flex flex-col box relative group shadow group-hover:shadow-sm md:w-[%] lg:w-[31%] md:h-[25vh] lg:h-[35vh] sm:w-[48%] sm:h-[200px]">
             <PortfolioSingle
               Img={Img7}
               Links="https://react-admin-dashboard838987.netlify.app/"
             />
           </div>
-          <div className="flex flex-col box relative group shadow group-hover:shadow-sm">
+          <div className="flex flex-col box relative group shadow group-hover:shadow-sm md:w-[%] lg:w-[31%] md:h-[25vh] lg:h-[35vh] sm:w-[48%] sm:h-[200px]">
             <PortfolioSingle
               Img={Img8}
               Links="https://getwork100.netlify.app/"
             />
           </div>
-          <div className="flex flex-col box relative group shadow group-hover:shadow-sm">
+          <div className="flex flex-col box relative group shadow group-hover:shadow-sm md:w-[%] lg:w-[31%] md:h-[25vh] lg:h-[35vh] sm:w-[48%] sm:h-[200px]">
             <PortfolioSingle
               Img={Img1}
               Links="https://faisal-tailwind-css-site.netlify.app/"
             />
           </div>
-          <div className="flex flex-col box relative group shadow group-hover:shadow-sm">
+          <div className="flex flex-col box relative group shadow group-hover:shadow-sm md:w-[%] lg:w-[31%] md:h-[25vh] lg:h-[35vh] sm:w-[48%] sm:h-[200px]">
             <PortfolioSingle
               Img={Img10}
               Links="https://reactwebsiteclone.netlify.app/"
             />
           </div>
-          <div className="flex flex-col box relative group shadow group-hover:shadow-sm">
+          <div className="flex flex-col box relative group shadow group-hover:shadow-sm md:w-[%] lg:w-[31%] md:h-[25vh] lg:h-[35vh] sm:w-[48%] sm:h-[200px]">
             <PortfolioSingle
               Img={Img11}
               Links="https://resturentapp.netlify.app/"
             />
           </div>
-          <div className="flex flex-col box relative group shadow group-hover:shadow-sm">
+          <div className="flex flex-col box relative group shadow group-hover:shadow-sm md:w-[%] lg:w-[31%] md:h-[25vh] lg:h-[35vh] sm:w-[48%] sm:h-[200px]">
             <PortfolioSingle
               Img={Img12}
               Links="https://myfastreact-app.netlify.app/"
             />
           </div>
-          <div className="flex flex-col box relative group shadow group-hover:shadow-sm">
+          <div className="flex flex-col box relative group shadow group-hover:shadow-sm md:w-[%] lg:w-[31%] md:h-[25vh] lg:h-[35vh] sm:w-[48%] sm:h-[200px]">
             <PortfolioSingle
               Img={Img13}
               Links="https://nifty-faisal-fa0857.netlify.app/"
             />
           </div>
-          <div className="flex flex-col box relative group shadow group-hover:shadow-sm">
+          <div className="flex flex-col box relative group shadow group-hover:shadow-sm md:w-[%] lg:w-[31%] md:h-[25vh] lg:h-[35vh] sm:w-[48%] sm:h-[200px]">
             <PortfolioSingle
               Img={Img14}
               Links="https://faisalpsdwordfile.netlify.app/"
             />
           </div>
-          <div className="flex flex-col box relative group shadow group-hover:shadow-sm">
+          <div className="flex flex-col box relative group shadow group-hover:shadow-sm md:w-[%] lg:w-[31%] md:h-[25vh] lg:h-[35vh] sm:w-[48%] sm:h-[200px]">
             <PortfolioSingle
               Img={Img15}
               Links="https://iconference-react-app-by-faisal.vercel.app/"
             />
           </div>
-          <div className="flex flex-col box relative group shadow group-hover:shadow-sm">
+          <div className="flex flex-col box relative group shadow group-hover:shadow-sm md:w-[%] lg:w-[31%] md:h-[25vh] lg:h-[35vh] sm:w-[48%] sm:h-[200px]">
             <PortfolioSingle
               Img={Img16}
               Links="https://react-door-handle-design.vercel.app/"
@@ -187,23 +187,23 @@ const Portfolio = () => {
         <div
           className={
             tab === 2
-              ? "flex md:justify-between lg:justify-between  items-center justify-center flex-wrap gap-6 md:gap-5 w-full mt-12"
+              ? "flex md:justify-between lg:justify-between  items-center justify-center flex-wrap gap-6 lg:gap-y-[30px] md:gap-5 w-full mt-12"
               : "hidden"
           }
         >
-         <div className="flex flex-col box relative group shadow group-hover:shadow-sm">
+         <div className="flex flex-col box relative group shadow group-hover:shadow-sm md:w-[%] lg:w-[31%] md:h-[25vh] lg:h-[35vh] sm:w-[48%] sm:h-[200px]">
             <PortfolioSingle
               Img={Img9}
               Links="https://faisal-ahmed100.github.io/my-protfolio-site/?fbclid=IwAR2_cDB3KFDmEmqgt3w2dJhI2nLzPx5KMNHIl5T_YFI0uAWg7sWWw7eU0V4"
             />
           </div>
-          <div className="flex flex-col box relative group shadow group-hover:shadow-sm">
+          <div className="flex flex-col box relative group shadow group-hover:shadow-sm md:w-[%] lg:w-[31%] md:h-[25vh] lg:h-[35vh] sm:w-[48%] sm:h-[200px]">
             <PortfolioSingle
               Img={Img2}
               Links="https://faisal-nft-project.netlify.app"
             />
           </div>
-          <div className="flex flex-col box relative group shadow group-hover:shadow-sm">
+          <div className="flex flex-col box relative group shadow group-hover:shadow-sm md:w-[%] lg:w-[31%] md:h-[25vh] lg:h-[35vh] sm:w-[48%] sm:h-[200px]">
             <PortfolioSingle
               Img={Img4}
               Links="https://faisal123-react-app.netlify.app"
@@ -211,57 +211,57 @@ const Portfolio = () => {
           </div>
           
          
-          <div className="flex flex-col box relative group shadow group-hover:shadow-sm">
+          <div className="flex flex-col box relative group shadow group-hover:shadow-sm md:w-[%] lg:w-[31%] md:h-[25vh] lg:h-[35vh] sm:w-[48%] sm:h-[200px]">
             <PortfolioSingle
               Img={Img6}
               Links="https://faisal-full-ecomarce.netlify.app/"
             />
           </div>
-          <div className="flex flex-col box relative group shadow group-hover:shadow-sm">
+          <div className="flex flex-col box relative group shadow group-hover:shadow-sm md:w-[%] lg:w-[31%] md:h-[25vh] lg:h-[35vh] sm:w-[48%] sm:h-[200px]">
             <PortfolioSingle
               Img={Img7}
               Links="https://react-admin-dashboard838987.netlify.app/"
             />
           </div>
-          <div className="flex flex-col box relative group shadow group-hover:shadow-sm">
+          <div className="flex flex-col box relative group shadow group-hover:shadow-sm md:w-[%] lg:w-[31%] md:h-[25vh] lg:h-[35vh] sm:w-[48%] sm:h-[200px]">
             <PortfolioSingle
               Img={Img8}
               Links="https://getwork100.netlify.app/"
             />
           </div>
          
-          <div className="flex flex-col box relative group shadow group-hover:shadow-sm">
+          <div className="flex flex-col box relative group shadow group-hover:shadow-sm md:w-[%] lg:w-[31%] md:h-[25vh] lg:h-[35vh] sm:w-[48%] sm:h-[200px]">
             <PortfolioSingle
               Img={Img10}
               Links="https://reactwebsiteclone.netlify.app/"
             />
           </div>
-          <div className="flex flex-col box relative group shadow group-hover:shadow-sm">
+          <div className="flex flex-col box relative group shadow group-hover:shadow-sm md:w-[%] lg:w-[31%] md:h-[25vh] lg:h-[35vh] sm:w-[48%] sm:h-[200px]">
             <PortfolioSingle
               Img={Img11}
               Links="https://resturentapp.netlify.app/"
             />
           </div>
-          <div className="flex flex-col box relative group shadow group-hover:shadow-sm">
+          <div className="flex flex-col box relative group shadow group-hover:shadow-sm md:w-[%] lg:w-[31%] md:h-[25vh] lg:h-[35vh] sm:w-[48%] sm:h-[200px]">
             <PortfolioSingle
               Img={Img12}
               Links="https://myfastreact-app.netlify.app/"
             />
           </div>
-          <div className="flex flex-col box relative group shadow group-hover:shadow-sm">
+          <div className="flex flex-col box relative group shadow group-hover:shadow-sm md:w-[%] lg:w-[31%] md:h-[25vh] lg:h-[35vh] sm:w-[48%] sm:h-[200px]">
             <PortfolioSingle
               Img={Img13}
               Links="https://nifty-faisal-fa0857.netlify.app/"
             />
           </div>
           
-          <div className="flex flex-col box relative group shadow group-hover:shadow-sm">
+          <div className="flex flex-col box relative group shadow group-hover:shadow-sm md:w-[%] lg:w-[31%] md:h-[25vh] lg:h-[35vh] sm:w-[48%] sm:h-[200px]">
             <PortfolioSingle
               Img={Img15}
               Links="https://iconference-react-app-by-faisal.vercel.app/"
             />
           </div>
-          <div className="flex flex-col box relative group shadow group-hover:shadow-sm">
+          <div className="flex flex-col box relative group shadow group-hover:shadow-sm md:w-[%] lg:w-[31%] md:h-[25vh] lg:h-[35vh] sm:w-[48%] sm:h-[200px]">
             <PortfolioSingle
               Img={Img16}
               Links="https://react-door-handle-design.vercel.app/"
@@ -273,11 +273,11 @@ const Portfolio = () => {
         <div
           className={
             tab === 3
-              ? "flex md:justify-between lg:justify-between  items-center justify-center flex-wrap gap-6 md:gap-5 w-full mt-12"
+              ? "flex md:justify-between lg:justify-between  items-center justify-center flex-wrap gap-6 lg:gap-y-[30px] md:gap-5 w-full mt-12"
               : "hidden"
           }
         >
-           <div className="flex flex-col box relative group shadow group-hover:shadow-sm">
+           <div className="flex flex-col box relative group shadow group-hover:shadow-sm md:w-[%] lg:w-[31%] md:h-[25vh] lg:h-[35vh] sm:w-[48%] sm:h-[200px]">
             <PortfolioSingle
               Img={Img5}
               Links="https://faisal-nextjs-app.netlify.app/"

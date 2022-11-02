@@ -3,7 +3,7 @@ import React from 'react'
 const PortfolioSingle = ({Img,Links}) => {
   return (
     <>
-  <div className='md:w-[200px] md:h-[200px] lg:w-[210px] lg:h-[210px] xl:w-[316px] xl:h-[250px] w-full h-[300px] '>
+  <div className='w-full h-full'>
     <img className='h-full w-full transition-all object-cover rounded-md' src={Img} alt="img" />
   </div>
 
